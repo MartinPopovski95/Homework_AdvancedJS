@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reminder App</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Remind yourself</h1>
+			<input
+				type="text"
+				id="titleInput"
+				placeholder="Write the title here" />
+			<select name="" id="priorityInput">
+				<option value="Low">Low priority</option>
+				<option value="Medium">Medium priority</option>
+				<option value="High">High priority</option>
+			</select>
+			<input type="color" id="colorInput" />
+			<textarea
+				name=""
+				id="descriptionInput"
+				rows="4"
+				cols="30"
+				placeholder="Write the description here"></textarea>
+			<button id="addReminderBtn">Add reminder</button>
+			<button id="showAllRemindersBtn">Show all reminders</button>
+
+			<div id="tableContainer"></div>
+		</div>
+		<script src="reminder.js"></script>
+	</body>
+</html>

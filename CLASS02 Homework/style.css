@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 1em auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    color: #333;
+    height: auto;
+}
+
+.container {
+    flex-grow: 1;
+    border: 2px solid #284b63;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #284b63;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: #D9D9D9;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="color"] {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    resize: none;
+    font: inherit;
+}
+
+input[type="color"] {
+    padding: 0.3rem;
+    height: 3rem;
+    border: none;
+}
+
+button {
+    padding: 0.6rem 1rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #284b63;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3c6e71;
+    color: #fff;
+}
+
+button:focus {
+    outline: none;
+    background-color: #353535;
+    color: #fff;
+}
+
+#tableContainer {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #fff;
+    color: #353535;
+}
+
+th, td {
+    border: 1px solid #D9D9D9;
+    padding: 0.8rem;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+
+th {
+    text-align: center;
+    background-color: #284b63;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #3C6E71;
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+    button {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    #tableContainer {
+        margin-top: 1rem;
+    }
+}
